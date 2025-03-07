@@ -1,0 +1,20 @@
+x=list("Apple","Banana","Orange")
+print(x)
+print('give the second element in the list of fruits')
+print(x[3])
+
+print(x[-3])
+print(x)
+
+x[3]="Mango"
+print(x)
+
+print(append(x,"Orange",after =2))
+#to check element is there or not...
+print("Apple"%in%x)
+print("watermelon"%in%x)
+
+y=list(1,2,3,4)
+z=list("a","b","c","d")
+a=c(y,z)
+print(a)

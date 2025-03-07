@@ -1,0 +1,21 @@
+library(dplyr)
+data <- c(12, 15, 12, 18, 20, 22, 22, 25, 30, 30, 30, 35, 40)
+mean_value <- mean(data)
+cat("Mean:", mean_value, "\n")
+median_value <- median(data)
+cat("Median:", median_value, "\n")
+get_mode <- function(v) {
+  uniqv <- unique(v)
+  uniqv[which.max(tabulate(match(v, uniqv)))]
+}
+mode_value <- get_mode(data)
+cat("Mode:", mode_value, "\n")
+quartiles <- quantile(data)
+cat("Quartiles:", quartiles, "\n")
+range_value <- range(data)
+cat("Range:", range_value, "\n")
+iqr_value <- IQR(data)
+cat("Interquartile Range (IQR):", iqr_value, "\n")
+hist(data, main="Histogram of Sample Data", xlab="Values", ylab="Frequency",
+     col="lightblue", border="black")
+

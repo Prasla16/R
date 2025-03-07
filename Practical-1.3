@@ -1,0 +1,15 @@
+data = data.frame(Name = c("a", "b", "c"), Rollno = c(12, 13, 14),Department = c("it", "cs", "it"))
+
+print(data)  
+print(data$Name[2])  
+
+data2 = data.frame(Name = c("d", "e", "i"), 
+                   Rollno = c(15, 16, 17), 
+                   Department = c("it", "cs", "it"))
+
+New_data = rbind(data, data2)
+print(New_data)
+
+New_data = cbind(data, data2)
+print(New_data)
+
